@@ -1,5 +1,4 @@
 import './App.css';
-import image1 from "/Users/deepikadasari/Documents/Abhi/learning-new-technologies/learningreact/src/logo.png"
 import { useState } from 'react';
 
 
@@ -15,7 +14,6 @@ function App() {
         <h1>Reggae</h1>
       </header>
       <div className = "content">
-        <img src = {image1} alt="bombaclot" className = "image"></img>
         <ul className="bullet-points"> 
           <li>First bullet point</li>
           <li>Second Bullet point</li>
