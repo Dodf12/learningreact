@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import image1 from "/Users/deepikadasari/Documents/Abhi/learning-new-technologies/learningreact/src/logo.png"
+import { useState } from 'react';
+
 
 function App() {
+  const [headerColor, setHeaderColor] = useState('blue');
+  const changeColor = () => (
+    setHeaderColor(headerColor === 'blue' ? 'orange' : 'blue')
+
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className = "container">
+      <header className = "header">
+        <h1>Reggae</h1>
       </header>
+      <div className = "content">
+        <img src = {image1} alt="bombaclot" className = "image"></img>
+        <ul className="bullet-points"> 
+          <li>First bullet point</li>
+          <li>Second Bullet point</li>
+          <li>Third Bullet point</li>
+        </ul>
+      </div>
+      <div>
+        <h1 style={{color : headerColor}}> Hello World</h1>
+        <button onClick={changeColor}>Change Color</button>
+      </div>
+
     </div>
   );
 }

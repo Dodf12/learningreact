@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  text-align: center;
+}
+
+.header {
+  background-color: coral;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image{
+  max-width: 300px;
+  height: auto;
+}
+
+.bullet-points {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
